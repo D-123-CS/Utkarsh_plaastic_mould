@@ -1,0 +1,179 @@
+/* Reset and general styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.nav-item {
+  margin: 20px;
+  padding: 10px;
+}
+
+.navbar {
+  background-color: orange;
+}
+
+/* Header Section */
+#header {
+  background-image: linear-gradient(45deg, rgba(52, 53, 52, 0.7), rgba(52, 53, 52, 0.7), rgba(104, 104, 104, 0.5)),
+  url("Images/Header_bg.jpg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#header h1 {
+  font-size: 3rem;
+}
+
+/* Button Styling */
+.btn {
+  width: 250px;
+  margin-left: 140px;
+}
+
+/* Card Title Styling */
+.card-title {
+  font-size: 50px;
+  margin-top: 100px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+
+/* Services Section */
+#services {
+  margin-top: 500px;
+  text-align: center;
+  font-size: 100px;
+}
+
+/* Service Image Styling */
+#S {
+  width: 300px;
+  height: 275px;
+  border-radius: 30px 100px 50px 50px;
+}
+
+/* Column Layout for Service Cards */
+.col-4 {
+  background-color: rgb(190, 190, 190);
+  height: auto;
+  width: 420px;
+  float: left;
+  margin: 30px;
+  padding: 10px;
+  padding-bottom: 50px;
+  font-size: larger;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* 'Know More' Section */
+#know-more {
+  margin-left: 30px;
+  margin-top: 100px;
+  font-size: larger;
+}
+
+/* Column for Large Images */
+#col-5 {
+  width: 500px;
+  height: 450px;
+  border-radius: 150px 80px 150px 80px;
+}
+
+/* Responsive Adjustments */
+
+/* Tablet and larger screens (768px and above) */
+@media (min-width: 768px) {
+
+  #services {
+      font-size: 80px;
+  }
+
+  .card-title {
+      font-size: 40px;
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+
+  /* Make columns more responsive for larger screens */
+  .col-4 {
+      width: 350px; /* Adjust width for better use of space */
+      margin: 20px;
+  }
+
+  /* Adjust the size of service images */
+  #S {
+      width: 250px;
+      height: 220px;
+  }
+
+  /* Adjust large image columns */
+  #col-5 {
+      width: 400px;
+      height: 400px;
+  }
+}
+
+/* Mobile Screens (Less than 768px) */
+@media (max-width: 767px) {
+
+  /* Services Section - Smaller font */
+  #services {
+      font-size: 50px;
+      margin-top: 300px;
+  }
+
+  /* Card Title - Smaller font and margin adjustments */
+  .card-title {
+      font-size: 30px;
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  /* Adjust Button Placement */
+  .btn {
+      width: 200px;
+      margin-left: 0;
+      margin-top: 20px;
+  }
+
+  /* Adjust Column Layout for smaller devices */
+  .col-4 {
+      width: 100%; /* Full width for mobile */
+      margin: 10px 0;
+  }
+
+  /* Adjust Service Image */
+  #S {
+      width: 200px;
+      height: 175px;
+  }
+
+  /* Adjust Column for large image */
+  #col-5 {
+      width: 350px;
+      height: 350px;
+  }
+
+  /* 'Know More' Section Adjustment */
+  #know-more {
+      margin-left: 0;
+      margin-top: 50px;
+      font-size: 1.2em;
+  }
+}

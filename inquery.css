@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    background: linear-gradient(135deg, #71b7e6, #9b9b9b);
+}
+
+.container {
+    max-width: 500px;
+    width: 40%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #71b7e6, #9b9b9b);
+}
+
+.container form.user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box {
+    margin-bottom: 10px;
+    margin: 10px 0 5px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 20px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #9b59b6;
+}
+
+form .button input {
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: red;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Tablets and Larger Screens */
+@media (min-width: 768px) {
+    .container {
+        width: 60%;
+        max-width: 700px;
+        padding: 30px 40px;
+    }
+
+    .container .title {
+        font-size: 30px;
+    }
+
+    form .user-details .input-box {
+        width: calc(50% - 20px);
+    }
+
+    form .button input {
+        font-size: 20px;
+        padding: 12px 25px;
+    }
+}
+
+/* For Mobile Screens */
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px 25px;
+    }
+
+    .container .title {
+        font-size: 22px;
+    }
+
+    form .user-details .input-box {
+        width: 100%;
+    }
+
+    form .button input {
+        width: 100%;
+        font-size: 16px;
+        padding: 15px;
+    }
+}

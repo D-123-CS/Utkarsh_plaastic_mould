@@ -1,0 +1,68 @@
+hr {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #333 inset;
+  }
+
+  
+  .quote{
+    border: 2px white;
+    border-style: dashed;
+    padding: 20px;
+    margin: 30px;
+  }
+  
+  
+  footer{
+    height: 100px;
+    /* margin-top: 30px; */
+    /* margin-bottom: 30px; */
+  }
+  
+  #header{
+    background-image:linear-gradient(45deg, rgba(52, 53, 52, 0.7), rgba(52, 53, 52, 0.7), rgba(104, 104, 104, 0.5)),
+    url("Images/Header_bg.jpg");
+    height: 500px;
+    color: white;
+
+  }
+
+  /* Media Queries for Responsiveness */
+
+/* Tablet Screens and Larger */
+@media (min-width: 768px) {
+
+  .quote {
+      font-size: 1.5em;
+      margin: 40px;
+  }
+
+  footer {
+      padding: 20px 50px;
+      height: 120px;
+  }
+
+  #header {
+      height: 400px;
+  }
+}
+
+/* Mobile Screens (Less than 768px) */
+@media (max-width: 767px) {
+
+  .quote {
+      font-size: 1em;
+      margin: 20px;
+      padding: 15px;
+  }
+
+  footer {
+      padding: 15px;
+      height: 80px;
+  }
+
+  #header {
+      height: 300px;
+      padding: 20px;
+  }
+}
